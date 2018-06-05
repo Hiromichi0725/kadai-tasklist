@@ -7,10 +7,8 @@
     
     
     {!! Form::model($task, ['route' => ['tasks.update', $task->id], 'method' => 'put']) !!}
-            <div class="col-xs-12">
-                <div class="col-sm-offset-2 col-sm-8">
-                    <div class="col-md-offset-2 col-md-8">
-                        <div class="col-lg-offset-3 col-lg-6">
+            <div class="col-xs-12 col-sm-offset-2 col-sm-8 col-lg-offset-3 col-lg-6">
+                
                             <div class="form-group">    
                                 {!! Form::label('status', 'ステータス:') !!}
                                 {!! Form::text('status',null,['class' => 'form-control']) !!}
@@ -22,9 +20,7 @@
                             </div>
             
                                 {!! Form::submit('更新', ['class' => 'btn btn-primary']) !!}
-                        </div>
-                    </div>
-                </div>
+                        
             </div>
     {!! Form::close() !!}
 
