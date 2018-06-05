@@ -6,15 +6,32 @@
     
     
     {!! Form::model($task, ['route' => 'tasks.store']) !!}
-
-        {!! Form::label('status', 'ステータス:') !!}
-        {!! Form::text('status') !!}
+    <div class="col-xs-12">
+                <div class="col-sm-offset-2 col-sm-8">
+                    <div class="col-md-offset-2 col-md-8">
+                        <div class="col-lg-offset-3 col-lg-6">    
+                            <div class="form-group">
+                                {!! Form::label('status', 'ステータス:') !!}
+                                {!! Form::text('status',null,['class' => 'form-control']) !!}
+                            </div>
         
-        {!! Form::label('content', 'タスク:') !!}
-        {!! Form::text('content') !!}
+                            <div class="form-group">
+                                {!! Form::label('content', 'タスク:') !!}
+                                {!! Form::text('content', null, ['class' => 'form-control']) !!}
+                            </div>    
+        
+        
+            {!! Form::submit('投稿', ['class' => 'btn btn-primary']) !!}
+                    </div>
+                </div>
+            </div>
+        </div>
 
-        {!! Form::submit('投稿') !!}
+            
 
-    {!! Form::close() !!}
+        {!! Form::close() !!}
+        
+        
+        
 
 @endsection
