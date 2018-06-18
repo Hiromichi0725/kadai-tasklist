@@ -7,7 +7,7 @@
             </aside>
             <div class="col-xs-8">
                 @if (count($tasks) > 0)
-                    @include('tasks.tasks', ['tasks' => $tasks])
+                    @include('tasks.index', ['tasks' => $tasks])
                 @endif
             </div>
         </div>
